@@ -1,0 +1,72 @@
+.plantItem {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plantItem:hover {
+    background-color: #e0f7fa;
+}
+
+.plantInfo {
+    display: flex;
+    align-items: center;
+}
+
+.plantType {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #00796b;
+    margin-left: 10px;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+    align-items: center;
+}
+
+.actionButtons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.actionButtons button:hover {
+    transform: scale(1.1); /* Leve efeito de zoom ao passar o mouse */
+}
+
+.performanceButton {
+    color: #00796b;
+}
+
+.editButton {
+    color: #FFA500;
+}
+
+.historyButton {
+    color: #000;
+}
+
+.deleteButton {
+    color: red;
+}
+
+.actionButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.deleteButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
